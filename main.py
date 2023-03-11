@@ -1,3 +1,15 @@
+"""
+USAGE - The code uses the Selenium WebDriver to automate filling out a Google Form and submitting it.
+
+        It reads data from a JSON file and inputs the values of "first_name" and "last_name" in the form. 
+        Then it selects a radio button and clicks the "submit" button.
+
+        After that, the code waits for a confirmation message, reads the message from the page, 
+        and checks if the message is "Thank you for attending". Based on the result, it prints 
+        a message whether the test was successful or not.
+        
+AUTHOR - https://github.com/Ahendrix9624/
+"""
 from selenium import webdriver
 import time
 import json
